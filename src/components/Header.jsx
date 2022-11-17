@@ -11,13 +11,15 @@ function Header() {
     <div>
       <Navbar bg="dark" variant="dark">
         <Container className="space-between">
-          <Navbar.Brand href="#home">
-            <img
-              src={Logo}
-              width="150"
-              height="150"
-              className="d-inline-block align-top"
-            />{" "}
+          <Navbar.Brand>
+            <NavLink to="/">
+              <img
+                src={Logo}
+                width="150"
+                height="150"
+                className="d-inline-block align-top"
+              />{" "}
+            </NavLink>
           </Navbar.Brand>
           <ul className="navbar-nav mr-auto">
             <li className="nav-item ">

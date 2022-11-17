@@ -15,8 +15,8 @@ function Footer() {
                   <img
                     src="https://images.pexels.com/photos/1166120/pexels-photo-1166120.jpeg?cs=srgb&dl=pexels-jonathan-petersson-1166120.jpg&fm=jpg&_gl=1*be8tkk*_ga*MjA4MzMyNTczMC4xNjYzNzU3MzEz*_ga_8JE65Q40S6*MTY2ODY4NDQxMy44LjEuMTY2ODY4NDQzNy4wLjAuMA.."
                     height="200"
-                    width="200"
-                    className="rounded-circle"
+                    width="250"
+                    className="rounded"
                   />
                 </div>
 

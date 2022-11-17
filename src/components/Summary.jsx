@@ -14,7 +14,12 @@ function Summary({ formik }) {
             <pre>{JSON.stringify(formik.values, null, 2)}</pre>
           </Card.Text>
         </Card.Body>
-        <Button variant="success" type="Submit">
+        <Button
+          variant="success"
+          type="Submit"
+          className="py-2"
+          style={{ fontWeight: "bold" }}
+        >
           Sipariş Ver
         </Button>
       </Card>

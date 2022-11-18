@@ -16,7 +16,7 @@ function Summary({ formik }) {
         </Card.Body>
         <Button
           variant="success"
-          type="Submit"
+          type="submit"
           className="py-2"
           style={{ fontWeight: "bold" }}
         >

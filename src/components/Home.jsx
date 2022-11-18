@@ -9,10 +9,13 @@ function Home() {
     const errors = {};
 
     if (!values.size) {
-      errors.size = "Required size";
+      errors.size = "Pizza boyutunu seçmelisiniz";
     }
     if (!values.crust) {
-      errors.crust = "Required crust";
+      errors.crust = "Hamur tipini seçiniz";
+    }
+    if (!values.meat) {
+      errors.meat = "Et tipini seçiniz";
     }
     return errors;
   };
@@ -34,7 +37,7 @@ function Home() {
       specialInstruction: "",
     },
     onSubmit: (values) => {
-      JSON.stringify(values, null, 2);
+      alert(JSON.stringify(values, null, 2));
     },
     validate,
   });

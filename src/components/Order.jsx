@@ -106,12 +106,16 @@ function Order({ formik, values }) {
                       label={pizza.label}
                       value={pizza.value}
                       onChange={formik.handleChange}
+                      isInvalid={formik.errors.size && formik.touched.size}
                     />
                     <small className="px-4">{pizza.description}</small>
                   </div>
                 </Col>
               );
             })}
+            {formik.errors.size && formik.touched.size ? (
+              <Alert variant="danger">{formik.errors.size}</Alert>
+            ) : null}
           </Row>
         </Form.Group>
         <hr />
@@ -129,12 +133,16 @@ function Order({ formik, values }) {
                       label={crust.label}
                       value={crust.value}
                       onChange={formik.handleChange}
+                      isInvalid={formik.errors.crust && formik.touched.crust}
                     />
                     <small className="px-4">{crust.description}</small>
                   </div>
                 </Col>
               );
             })}
+            {formik.errors.crust && formik.touched.crust ? (
+              <Alert variant="danger">{formik.errors.crust}</Alert>
+            ) : null}
           </Row>
         </Form.Group>
       </Card.Body>
@@ -219,10 +227,14 @@ function Order({ formik, values }) {
                     value={meat.value}
                     label={meat.label}
                     onChange={formik.handleChange}
+                    isInvalid={formik.errors.meat && formik.touched.meat}
                   />
                 </Col>
               );
             })}
+            {formik.errors.meat && formik.touched.meat ? (
+              <Alert variant="danger">{formik.errors.meat}</Alert>
+            ) : null}
           </Row>
         </Card.Body>
       </Card>
